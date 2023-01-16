@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -8,8 +8,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assets/logo.png';
 export const NavBar = () => {
   return (
-
-    <Navbar bg="" expand="lg">
+<Fragment>
+    <Navbar bg="#FFFFFF" expand="lg">
     <Container fluid>
       <Navbar.Brand href="#"><img src={Logo}></img></Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -52,6 +52,8 @@ export const NavBar = () => {
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  {/* <h1>Stays in Finland</h1> */}
+  </Fragment>
   )
 }
 export default NavBar
