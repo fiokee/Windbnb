@@ -19,19 +19,20 @@ export const CardList = () => {
 
     <div class="card-container">
       {card.map((cards)=>{
-        return(
-          <div/>
-        )
-        console.log(cards.photo)
-      })
-      }
-   <div class="container__info">
-    <img></img>
+       
+       return(
+    <div class="container__info">
+    <img className='card-img' src={cards.photo}></img>
     <span>SUPER HOST</span>
     <span>Entire apartment.2 beds <AiFillStar/> 4.50</span>
     <span> Stylist apartment</span>
 
    </div>
+
+       )
+        console.log(cards.photo)
+      })
+      }
     </div>
    </Fragment>
   )

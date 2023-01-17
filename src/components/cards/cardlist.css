@@ -18,3 +18,7 @@
     color: aliceblue;
     border: solid green;
 }
+
+.card-img{
+    width: 20%;
+}
