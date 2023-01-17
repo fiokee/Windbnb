@@ -1,11 +1,15 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import data from '../stays.json'
 import './cardlist.css'
-export const CardList = () => {
-  const [card, setCard] = useState(data)
+import { AiFillStar } from 'react-icons/ai';
 
+export const CardList = () => {
+  const [card, setCard] = useState([])
+    useEffect(()=>{
+      setCard(data)
+    }, [])
   return (
    <Fragment>
     <div className='container'>
@@ -14,10 +18,19 @@ export const CardList = () => {
     </div>
 
     <div class="card-container">
+      {card.map((cards)=>{
+        return(
+          <div/>
+        )
+        console.log(cards.photo)
+      })
+      }
    <div class="container__info">
-    <span><i class="fas fa-eye"></i>2350</span>
-    <span><i class="fas fa-comment-alt"></i>624</span>
-    <span><i class="fas fa-download"></i>1470</span>
+    <img></img>
+    <span>SUPER HOST</span>
+    <span>Entire apartment.2 beds <AiFillStar/> 4.50</span>
+    <span> Stylist apartment</span>
+
    </div>
     </div>
    </Fragment>

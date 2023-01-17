@@ -5,3 +5,16 @@
     padding: 20px;
 }
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid red;
+}
+
+.container__info{
+    display: block;
+    width: 40%;
+    background-color: black;
+    color: aliceblue;
+    border: solid green;
+}
