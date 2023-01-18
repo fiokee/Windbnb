@@ -18,7 +18,24 @@
     color: aliceblue;
     border: solid green;
 }
+.container__info span{
+    margin: 12px;
+    justify-content: space-between;
+}
+.container__info .title{
+    display: flex;
+    margin: 12px;
+}
 
 .card-img{
-    width: 20%;
+    width: 30%;
+    
+}
+.apartment{
+    margin-left: 12px;
+}
+
+.rate{
+    color: #EB5757;
+    font-size: 20px;
 }

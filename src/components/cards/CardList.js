@@ -20,12 +20,12 @@ export const CardList = () => {
     <div class="card-container">
       {card.map((cards)=>{
        
-       return(
+        return(
     <div class="container__info">
     <img className='card-img' src={cards.photo}></img>
     <span>SUPER HOST</span>
-    <span>Entire apartment.2 beds <AiFillStar/> 4.50</span>
-    <span> Stylist apartment</span>
+    <span className='apartment'>Entire apartment.2 beds <AiFillStar className='rate'/> 4.50</span>
+    <span className='title'> {cards.title}</span>
 
    </div>
 
