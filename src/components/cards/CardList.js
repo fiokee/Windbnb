@@ -17,11 +17,11 @@ export const CardList = () => {
       <span>12+ stays</span>
     </div>
 
-    <div class="card-container">
-      {card.map((cards)=>{
+    <div className="card-container">
+      {card.map((cards, index)=>{
        
         return(
-    <div class="container__info">
+    <div className="container__info" key={index}>
     <img className='card-img' src={cards.photo}></img>
     <span>SUPER HOST</span>
     <span className='apartment'>Entire apartment.2 beds <AiFillStar className='rate'/> 4.50</span>
